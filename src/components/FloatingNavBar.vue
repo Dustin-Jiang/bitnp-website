@@ -290,7 +290,7 @@ onBeforeUnmount((): void => {
   display: none;
 }
 
-@supports not (backdrop-filter: blur(14px)) {
+@supports not ((-webkit-backdrop-filter: blur(14px)) or (backdrop-filter: blur(14px))) {
   .floating-nav-inner {
     background: rgba(var(--bg-rgb), 0.88);
   }
